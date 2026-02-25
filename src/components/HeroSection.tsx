@@ -1,54 +1,82 @@
 import { motion } from "framer-motion";
-import { ArrowDown } from "lucide-react";
+import { ArrowRight, Download } from "lucide-react";
+import profilePhoto from "@/assets/profile-photo.jpg";
 
 const HeroSection = () => {
   return (
-    <section id="hero" className="relative min-h-screen flex flex-col justify-center px-6 md:px-12 lg:px-24 pt-20">
-      <div className="max-w-5xl">
-        <motion.p
-          initial={{ opacity: 0, x: -20 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="font-mono text-sm text-primary mb-6 tracking-widest uppercase"
-        >
-          Creative Developer
-        </motion.p>
-        <motion.h1
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-          className="font-heading text-5xl md:text-7xl lg:text-8xl font-bold leading-[0.95] tracking-tight text-foreground mb-8"
-        >
-          I build digital
-          <br />
-          experiences that
-          <br />
-          <span className="text-gradient">stand out.</span>
-        </motion.h1>
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.7 }}
-          className="text-muted-foreground text-lg md:text-xl max-w-xl leading-relaxed"
-        >
-          Full-stack developer passionate about crafting intuitive interfaces and scalable systems. Based in San Francisco.
-        </motion.p>
-      </div>
+    <section className="min-h-screen flex items-center px-6 md:px-16 pt-20">
+      <div className="max-w-7xl mx-auto w-full grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <motion.p
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className="text-sm font-semibold text-primary tracking-widest uppercase mb-6"
+          >
+            Full-Stack Developer · Designer · Builder
+          </motion.p>
+          <motion.h1
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="font-heading text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-foreground mb-4"
+          >
+            I build digital experiences that{" "}
+            <span className="text-primary">stand out.</span>
+          </motion.h1>
+          <motion.p
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+            className="text-muted-foreground text-base md:text-lg leading-relaxed mb-4 max-w-lg"
+          >
+            From web applications and interactive UIs to scalable backend systems, I turn ideas into working products and deployable solutions.
+          </motion.p>
+          <motion.p
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
+            className="text-muted-foreground text-sm leading-relaxed mb-8 max-w-lg"
+          >
+            I am <strong className="text-foreground">John Doe</strong>, a Full-Stack Developer specializing in React, TypeScript, and Node.js — building practical technologies that solve real problems and improve user experiences.
+          </motion.p>
 
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.2, duration: 0.6 }}
-        className="absolute bottom-12 left-6 md:left-12"
-      >
-        <button
-          onClick={() => document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })}
-          className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors font-mono text-sm"
+          <motion.div
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.6 }}
+            className="flex flex-wrap gap-3"
+          >
+            <button
+              onClick={() => document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" })}
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-primary text-primary-foreground font-semibold text-sm hover:opacity-90 transition-opacity"
+            >
+              View My Projects <ArrowRight className="w-4 h-4" />
+            </button>
+            <a
+              href="#"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-border bg-card text-foreground font-semibold text-sm hover:bg-muted transition-colors"
+            >
+              <Download className="w-4 h-4" /> Download Resume
+            </a>
+          </motion.div>
+        </div>
+
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.7, delay: 0.3 }}
+          className="flex justify-center md:justify-end"
         >
-          <ArrowDown className="w-4 h-4 animate-bounce" />
-          Scroll
-        </button>
-      </motion.div>
+          <div className="relative">
+            <img
+              src={profilePhoto}
+              alt="John Doe — Full-Stack Developer"
+              className="w-72 h-80 md:w-80 md:h-96 object-cover rounded-2xl shadow-lg"
+            />
+          </div>
+        </motion.div>
+      </div>
     </section>
   );
 };
