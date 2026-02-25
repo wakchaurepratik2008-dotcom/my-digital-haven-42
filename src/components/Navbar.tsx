@@ -19,7 +19,7 @@ const Navbar = () => {
       className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 md:px-16 py-4 bg-background/80 backdrop-blur-md"
     >
       <button onClick={() => scrollTo("Home")} className="font-heading font-bold text-xl text-foreground tracking-tight">
-        John <span className="text-primary">Doe</span>
+        Pratik <span className="text-primary">Wakchaure</span>
       </button>
       <div className="flex gap-8">
         {navItems.map((item) => (

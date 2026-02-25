@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-const skills = ["React", "TypeScript", "Node.js", "Python", "PostgreSQL", "Tailwind CSS", "GraphQL", "Docker", "AWS", "Next.js"];
+const skills = ["Creativity", "Data Analysis", "Leadership", "Event Planning", "Customer Service", "Technology", "Hindi", "English", "Marathi"];
 
 const SkillTags = () => {
   return (
@@ -12,7 +12,7 @@ const SkillTags = () => {
           viewport={{ once: true }}
           className="text-sm font-medium text-muted-foreground mb-5"
         >
-          What I Work With
+          What I Bring
         </motion.p>
         <motion.div
           initial={{ opacity: 0, y: 20 }}

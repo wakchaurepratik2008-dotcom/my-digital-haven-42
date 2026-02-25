@@ -2,10 +2,10 @@ import { motion } from "framer-motion";
 import profilePhoto from "@/assets/profile-photo.jpg";
 
 const timeline = [
-  { year: "2019", title: "Foundation", desc: "Started coding journey, learning fundamentals of web development and programming." },
-  { year: "2020", title: "Building Real Systems", desc: "Developed first full-stack apps, dove deep into React and Node.js." },
-  { year: "2022", title: "Professional Growth", desc: "Joined a startup as frontend developer, shipped products used by thousands." },
-  { year: "Present", title: "Senior Developer", desc: "Leading frontend architecture, mentoring junior developers, and building scalable systems." },
+  { year: "School", title: "Academic Excellence", desc: "Scored 92.20% in 10th grade from Agasti Arts Commerce and Science Mahavidhyalay, Akole." },
+  { year: "2025", title: "Diploma in Computer Engineering", desc: "Currently pursuing Diploma in Computer Engineering at Sanjivani University, building a strong foundation in technology." },
+  { year: "2025", title: "Certifications & Growth", desc: "Earned Registration Certificate and actively expanding skills in data analysis, leadership, and technology." },
+  { year: "Ongoing", title: "Building & Learning", desc: "Exploring new technologies, developing projects, and preparing for a career in the tech industry." },
 ];
 
 const AboutSection = () => {
@@ -31,7 +31,7 @@ const AboutSection = () => {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="text-muted-foreground text-sm mb-12 max-w-2xl"
         >
-          A developer driven by curiosity, building at the intersection of design, engineering, and real-world impact.
+          A student driven by curiosity, passionate about technology, science, and creative problem-solving.
         </motion.p>
 
         <div className="grid md:grid-cols-3 gap-12 mb-20">
@@ -44,13 +44,13 @@ const AboutSection = () => {
           >
             <img
               src={profilePhoto}
-              alt="John Doe"
+              alt="Pratik Wakchaure"
               className="w-full max-w-xs rounded-2xl shadow-md"
             />
             <div className="mt-4 space-y-1">
-              <p className="text-sm font-semibold text-primary">Full-Stack Developer</p>
-              <p className="text-xs text-muted-foreground">✓ Open to opportunities</p>
-              <p className="text-xs text-muted-foreground">📍 San Francisco, CA</p>
+              <p className="text-sm font-semibold text-primary">Computer Engineering Student</p>
+              <p className="text-xs text-muted-foreground">✓ Open to Internships & Opportunities</p>
+              <p className="text-xs text-muted-foreground">📍 Akole, Ahmednagar, Maharashtra</p>
             </div>
           </motion.div>
 
@@ -62,13 +62,13 @@ const AboutSection = () => {
             className="md:col-span-2 space-y-4 text-muted-foreground leading-relaxed text-sm"
           >
             <p>
-              My journey started with a simple question: <em>How can technology make everyday life better?</em>
+              My journey started with a deep fascination for <em>technology and science</em> — wanting to understand how things work and how they can be improved.
             </p>
             <p>
-              I discovered my passion for building systems that bridge the gap between great design and robust engineering. From e-commerce platforms to real-time dashboards, I focus on crafting experiences that are both beautiful and performant.
+              Currently pursuing my Diploma in Computer Engineering at Sanjivani University, I'm building a strong foundation in both technical skills and soft skills. With a 92.20% score in my 10th grade, I bring the same dedication and discipline to everything I do.
             </p>
             <p>
-              Beyond building, I contribute to open source and mentor aspiring developers. I believe the best products come from diverse teams solving problems they genuinely care about.
+              I believe in continuous learning and growth. Whether it's leading events, analyzing data, or crafting creative solutions, I approach every challenge with enthusiasm and a desire to make an impact.
             </p>
           </motion.div>
         </div>
@@ -86,7 +86,7 @@ const AboutSection = () => {
             <div className="space-y-8">
               {timeline.map((item, i) => (
                 <motion.div
-                  key={item.year}
+                  key={item.title}
                   initial={{ opacity: 0, x: -20 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}

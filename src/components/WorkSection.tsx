@@ -3,45 +3,45 @@ import { ArrowUpRight } from "lucide-react";
 
 const projects = [
   {
-    title: "E-Commerce Platform",
-    category: "Full-Stack",
-    problem: "Traditional online stores lack real-time inventory and seamless checkout.",
-    solution: "Built a full-stack marketplace with real-time stock updates, Stripe payments, and an admin dashboard.",
-    impact: "Processing 500+ orders/month with 99.9% uptime.",
+    title: "Data Analysis Dashboard",
+    category: "Data Analysis",
+    problem: "Raw data is hard to interpret without proper visualization and insights.",
+    solution: "Built interactive dashboards to visualize data trends, patterns, and key metrics for better decision-making.",
+    impact: "Helped simplify complex datasets into actionable insights.",
     stats: [
-      { value: "500+", label: "Orders/Month" },
-      { value: "99.9%", label: "Uptime" },
-      { value: "<2s", label: "Load Time" },
+      { value: "📊", label: "Data Viz" },
+      { value: "📈", label: "Trend Analysis" },
+      { value: "💡", label: "Insights" },
     ],
-    tags: ["React", "Node.js", "Stripe", "PostgreSQL"],
+    tags: ["Data Analysis", "Visualization", "Problem Solving"],
     link: "#",
   },
   {
-    title: "Analytics Dashboard",
-    category: "Frontend",
-    problem: "Businesses need a clear, real-time view of key performance metrics.",
-    solution: "Data visualization tool with interactive charts, filters, and export capabilities.",
-    impact: "Used by 50+ teams to track and improve business outcomes.",
+    title: "College Event Management",
+    category: "Event Planning",
+    problem: "Coordinating college events requires meticulous planning and team leadership.",
+    solution: "Led end-to-end event planning including logistics, team coordination, and execution for college technical events.",
+    impact: "Successfully organized events with positive feedback from participants and faculty.",
     stats: [
-      { value: "50+", label: "Teams" },
-      { value: "Real-time", label: "Updates" },
-      { value: "12+", label: "Chart Types" },
+      { value: "🎯", label: "Planning" },
+      { value: "👥", label: "Team Lead" },
+      { value: "✅", label: "Execution" },
     ],
-    tags: ["TypeScript", "D3.js", "React", "WebSocket"],
+    tags: ["Leadership", "Event Planning", "Team Management"],
     link: "#",
   },
   {
-    title: "Component Library",
-    category: "Design System",
-    problem: "Inconsistent UI across multiple products slows development and hurts UX.",
-    solution: "40+ accessible, themeable components with docs, tests, and Figma integration.",
-    impact: "Adopted across 3 product teams, reducing UI development time by 60%.",
+    title: "Creative Tech Projects",
+    category: "Technology",
+    problem: "Learning best happens through hands-on building and experimentation.",
+    solution: "Developed multiple creative projects combining computer engineering fundamentals with innovative thinking.",
+    impact: "Strengthened practical skills in programming and problem-solving.",
     stats: [
-      { value: "40+", label: "Components" },
-      { value: "60%", label: "Faster Dev" },
-      { value: "3", label: "Teams" },
+      { value: "💻", label: "Coding" },
+      { value: "🔧", label: "Engineering" },
+      { value: "🚀", label: "Innovation" },
     ],
-    tags: ["React", "Storybook", "Figma", "Testing Library"],
+    tags: ["Computer Engineering", "Creativity", "Technology"],
     link: "#",
   },
 ];
@@ -57,9 +57,9 @@ const WorkSection = () => {
           transition={{ duration: 0.6 }}
           className="mb-4"
         >
-          <p className="text-sm font-medium text-muted-foreground mb-2">Case Studies</p>
+          <p className="text-sm font-medium text-muted-foreground mb-2">My Work</p>
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground">
-            Projects That <span className="text-primary">Matter</span>
+            Projects & <span className="text-primary">Experience</span>
           </h2>
         </motion.div>
         <motion.p
@@ -69,7 +69,7 @@ const WorkSection = () => {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="text-muted-foreground text-sm mb-12 max-w-xl"
         >
-          Not just what I built — but the problems I solved, the approach I took, and the impact I created.
+          Highlights of what I've worked on — combining creativity, technical skills, and leadership.
         </motion.p>
 
         <div className="space-y-8">
@@ -95,7 +95,7 @@ const WorkSection = () => {
               <div className="flex flex-wrap gap-4 mb-6">
                 {project.stats.map((stat) => (
                   <div key={stat.label} className="text-center">
-                    <p className="text-lg font-bold text-primary">{stat.value}</p>
+                    <p className="text-lg">{stat.value}</p>
                     <p className="text-xs text-muted-foreground">{stat.label}</p>
                   </div>
                 ))}
@@ -103,15 +103,15 @@ const WorkSection = () => {
 
               <div className="space-y-3 mb-6 text-sm">
                 <div>
-                  <p className="font-semibold text-foreground text-xs mb-1">The Problem</p>
+                  <p className="font-semibold text-foreground text-xs mb-1">The Challenge</p>
                   <p className="text-muted-foreground">{project.problem}</p>
                 </div>
                 <div>
-                  <p className="font-semibold text-foreground text-xs mb-1">My Solution</p>
+                  <p className="font-semibold text-foreground text-xs mb-1">My Approach</p>
                   <p className="text-muted-foreground">{project.solution}</p>
                 </div>
                 <div>
-                  <p className="font-semibold text-foreground text-xs mb-1">The Impact</p>
+                  <p className="font-semibold text-foreground text-xs mb-1">The Result</p>
                   <p className="text-muted-foreground">{project.impact}</p>
                 </div>
               </div>
