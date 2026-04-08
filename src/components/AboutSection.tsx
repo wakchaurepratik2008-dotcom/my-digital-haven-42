@@ -2,10 +2,10 @@ import { motion } from "framer-motion";
 import profilePhoto from "@/assets/profile-photo.jpg";
 
 const timeline = [
-  { year: "School", title: "Academic Excellence", desc: "Scored 92.20% in 10th grade from Agasti Arts Commerce and Science Mahavidhyalay, Akole." },
-  { year: "2025", title: "Diploma in Computer Engineering", desc: "Currently pursuing Diploma in Computer Engineering at Sanjivani University, building a strong foundation in technology." },
-  { year: "2025", title: "Certifications & Growth", desc: "Earned Registration Certificate and actively expanding skills in data analysis, leadership, and technology." },
-  { year: "Ongoing", title: "Building & Learning", desc: "Exploring new technologies, developing projects, and preparing for a career in the tech industry." },
+  { year: "School", title: "Academic Foundation", desc: "Scored 92.20% in 10th grade from a school in my local village, building a strong academic base." },
+  { year: "2024", title: "Joined Sanjivani University", desc: "After 10th, connected with Sanjivani Group of Institutes for higher education — starting my Integrated B.Tech journey." },
+  { year: "2025", title: "Vice President of SIBSA", desc: "Elected as Vice President of SIBSA, leading student initiatives and creating positive impact on campus." },
+  { year: "Ongoing", title: "Building & Learning", desc: "Working on websites like Vistara and other projects, learning Python, C, HTML, and exploring new technologies every day." },
 ];
 
 const AboutSection = () => {
@@ -31,7 +31,7 @@ const AboutSection = () => {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="text-muted-foreground text-sm mb-12 max-w-2xl"
         >
-          A student driven by curiosity, passionate about technology, science, and creative problem-solving.
+          A student from a local village, driven by curiosity and a passion for technology and leadership.
         </motion.p>
 
         <div className="grid md:grid-cols-3 gap-12 mb-20">
@@ -48,9 +48,9 @@ const AboutSection = () => {
               className="w-full max-w-xs rounded-2xl shadow-md"
             />
             <div className="mt-4 space-y-1">
-              <p className="text-sm font-semibold text-primary">Computer Engineering Student</p>
+              <p className="text-sm font-semibold text-primary">Vice President, SIBSA</p>
               <p className="text-xs text-muted-foreground">✓ Open to Internships & Opportunities</p>
-              <p className="text-xs text-muted-foreground">📍 Akole, Ahmednagar, Maharashtra</p>
+              <p className="text-xs text-muted-foreground">📍 Sanjivani Group of Institutes</p>
             </div>
           </motion.div>
 
@@ -62,13 +62,13 @@ const AboutSection = () => {
             className="md:col-span-2 space-y-4 text-muted-foreground leading-relaxed text-sm"
           >
             <p>
-              My journey started with a deep fascination for <em>technology and science</em> — wanting to understand how things work and how they can be improved.
+              I am a dedicated First-Year Integrated B.Tech student at Sanjivani Group of Institutes, currently serving as the <em>Vice President of SIBSA</em>. I am passionate about learning, leadership, and contributing to student initiatives that create a positive impact on campus.
             </p>
             <p>
-              Currently pursuing my Diploma in Computer Engineering at Sanjivani University, I'm building a strong foundation in both technical skills and soft skills. With a 92.20% score in my 10th grade, I bring the same dedication and discipline to everything I do.
+              Coming from a local village, after my 10th I connected with Sanjivani University for higher education. I enjoy taking on responsibilities that help me grow both academically and personally. I'm a fast learner with strong leadership skills — I solve problems and lead teams effectively.
             </p>
             <p>
-              I believe in continuous learning and growth. Whether it's leading events, analyzing data, or crafting creative solutions, I approach every challenge with enthusiasm and a desire to make an impact.
+              As I continue my engineering journey, I am focused on building strong technical skills, improving my communication and teamwork abilities, and shaping myself into a capable and responsible professional. I'm passionate about technology — developing, updating, and working on real projects.
             </p>
           </motion.div>
         </div>

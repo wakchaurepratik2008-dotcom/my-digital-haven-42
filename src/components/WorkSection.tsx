@@ -3,45 +3,45 @@ import { ArrowUpRight } from "lucide-react";
 
 const projects = [
   {
-    title: "Data Analysis Dashboard",
-    category: "Data Analysis",
-    problem: "Raw data is hard to interpret without proper visualization and insights.",
-    solution: "Built interactive dashboards to visualize data trends, patterns, and key metrics for better decision-making.",
-    impact: "Helped simplify complex datasets into actionable insights.",
+    title: "Vistara Website",
+    category: "Web Development",
+    problem: "Needed a professional web presence for Vistara with modern design and functionality.",
+    solution: "Developed and contributed to the Vistara website, applying HTML, CSS, and web development skills to create a functional and appealing site.",
+    impact: "Delivered a working website that serves its intended purpose effectively.",
     stats: [
-      { value: "📊", label: "Data Viz" },
-      { value: "📈", label: "Trend Analysis" },
-      { value: "💡", label: "Insights" },
+      { value: "🌐", label: "Web Dev" },
+      { value: "🎨", label: "Design" },
+      { value: "⚡", label: "Performance" },
     ],
-    tags: ["Data Analysis", "Visualization", "Problem Solving"],
+    tags: ["HTML", "Web Development", "Design"],
     link: "#",
   },
   {
-    title: "College Event Management",
-    category: "Event Planning",
-    problem: "Coordinating college events requires meticulous planning and team leadership.",
-    solution: "Led end-to-end event planning including logistics, team coordination, and execution for college technical events.",
-    impact: "Successfully organized events with positive feedback from participants and faculty.",
+    title: "SIBSA Student Initiatives",
+    category: "Leadership",
+    problem: "Student organizations need strong leadership to plan and execute impactful campus events.",
+    solution: "As Vice President of SIBSA, led student initiatives, coordinated events, and managed teams to create positive impact on campus.",
+    impact: "Successfully organized multiple events and built a collaborative student community.",
     stats: [
-      { value: "🎯", label: "Planning" },
       { value: "👥", label: "Team Lead" },
+      { value: "🎯", label: "Planning" },
       { value: "✅", label: "Execution" },
     ],
     tags: ["Leadership", "Event Planning", "Team Management"],
     link: "#",
   },
   {
-    title: "Creative Tech Projects",
+    title: "Web Projects & Experiments",
     category: "Technology",
-    problem: "Learning best happens through hands-on building and experimentation.",
-    solution: "Developed multiple creative projects combining computer engineering fundamentals with innovative thinking.",
-    impact: "Strengthened practical skills in programming and problem-solving.",
+    problem: "Learning best happens through hands-on building and real-world projects.",
+    solution: "Built multiple websites and projects to strengthen practical skills in Python, C, and HTML while exploring new technologies.",
+    impact: "Gained hands-on experience in programming and problem-solving through real projects.",
     stats: [
       { value: "💻", label: "Coding" },
-      { value: "🔧", label: "Engineering" },
-      { value: "🚀", label: "Innovation" },
+      { value: "🐍", label: "Python" },
+      { value: "🚀", label: "Learning" },
     ],
-    tags: ["Computer Engineering", "Creativity", "Technology"],
+    tags: ["Python", "C", "HTML", "Problem Solving"],
     link: "#",
   },
 ];
@@ -69,7 +69,7 @@ const WorkSection = () => {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="text-muted-foreground text-sm mb-12 max-w-xl"
         >
-          Highlights of what I've worked on — combining creativity, technical skills, and leadership.
+          Highlights of what I've worked on — combining technology, leadership, and hands-on learning.
         </motion.p>
 
         <div className="space-y-8">
