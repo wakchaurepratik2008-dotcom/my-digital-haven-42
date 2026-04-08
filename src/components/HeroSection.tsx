@@ -13,7 +13,7 @@ const HeroSection = () => {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-sm font-semibold text-primary tracking-widest uppercase mb-6"
           >
-            Computer Engineering Student · Tech Enthusiast · Leader
+            Diploma Student · Vice President SIBSA · Fast Learner
           </motion.p>
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
@@ -21,8 +21,8 @@ const HeroSection = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="font-heading text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-foreground mb-4"
           >
-            I build creative solutions with{" "}
-            <span className="text-primary">technology.</span>
+            Learning, leading &{" "}
+            <span className="text-primary">building.</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 15 }}
@@ -30,7 +30,7 @@ const HeroSection = () => {
             transition={{ duration: 0.5, delay: 0.4 }}
             className="text-muted-foreground text-base md:text-lg leading-relaxed mb-4 max-w-lg"
           >
-            From data analysis and event planning to leadership and customer service, I bring a creative and analytical approach to everything I do.
+            A fast learner with leadership skills — I solve problems, lead teams, and build projects that make a difference.
           </motion.p>
           <motion.p
             initial={{ opacity: 0, y: 15 }}
@@ -38,7 +38,7 @@ const HeroSection = () => {
             transition={{ duration: 0.5, delay: 0.5 }}
             className="text-muted-foreground text-sm leading-relaxed mb-8 max-w-lg"
           >
-            I am <strong className="text-foreground">Pratik Wakchaure</strong>, a Diploma in Computer Engineering student at Sanjivani University. I'm passionate about technology and science, with strong skills in creativity, data analysis, and leadership.
+            I am <strong className="text-foreground">Pratik Wakchaure</strong>, a first-year Integrated B.Tech student at Sanjivani Group of Institutes and Vice President of SIBSA. Passionate about technology, developing websites, and continuous learning.
           </motion.p>
 
           <motion.div
@@ -57,7 +57,7 @@ const HeroSection = () => {
               href="mailto:pratik.wakchaure2008@gmail.com"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-border bg-card text-foreground font-semibold text-sm hover:bg-muted transition-colors"
             >
-              <Download className="w-4 h-4" /> Download Resume
+              <Download className="w-4 h-4" /> Get In Touch
             </a>
           </motion.div>
         </div>
@@ -71,7 +71,7 @@ const HeroSection = () => {
           <div className="relative">
             <img
               src={profilePhoto}
-              alt="Pratik Wakchaure — Computer Engineering Student"
+              alt="Pratik Wakchaure — B.Tech Student & Vice President SIBSA"
               className="w-72 h-80 md:w-80 md:h-96 object-cover rounded-2xl shadow-lg"
             />
           </div>

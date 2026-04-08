@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-const skills = ["Creativity", "Data Analysis", "Leadership", "Event Planning", "Customer Service", "Technology", "Hindi", "English", "Marathi"];
+const skills = ["Python", "C", "HTML", "Leadership", "Fast Learner", "Problem Solving", "Team Management", "Event Planning", "Creativity", "Customer Service", "Hindi", "English", "Marathi"];
 
 const SkillTags = () => {
   return (
